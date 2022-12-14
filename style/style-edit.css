@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css?family=Muli:200,300,400,600,700,800,900");
+
+:root {
+    --accent-primary: #ffb347;
+    --accent-primary-lighter: #ffbe62;
+    --accent-secondary: rgb(53, 53, 255);
+    --accent-tertiary: #003B73;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Muli;
+  font-size: 16px;
+  transition: 100ms ease-in-out;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+.content {
+    padding: 20px;
+    width: 500px;
+    height: 550px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title h1 {
+    color: var(--accent-tertiary);
+    font-size: 2em;
+}
+
+.line {
+    width: 360px;
+    height: 2px;
+    background-color: var(--accent-primary);
+}
+
+form {
+    width: 80%;
+    height: 90%;
+}
+
+form table {
+    padding: 6px 10px;
+    width: 100%;
+}
+
+form input {
+    width: 100%;
+}
+
+form #price {
+    width: 50%;
+}
+
+form tr:last-child {
+    text-align: center;
+    height: 60px;
+}
+
+form tr:nth-child(even){
+    height: 40px;
+    vertical-align: top;
+}
+
+.btn-submit {
+    height: 40px;
+    width: 100px;
+    border-radius: 10px;
+    border: 0;
+    color: white;
+    font-weight: bold;
+    background-color: var(--accent-primary);
+}
+
+.btn-submit:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    background-color: var(--accent-primary-lighter);
+}
